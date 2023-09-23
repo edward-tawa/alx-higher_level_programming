@@ -13,9 +13,11 @@ Unittest classes:
 """
 import os
 import unittest
-from models.base import Base
-from models.rectangle import Rectangle
-from models.square import Square
+import sys
+sys.path.append("../../")
+from models import base as Base
+from models import rectangle as Rectangle
+from models import square as Square
 
 
 class TestBase_instantiation(unittest.TestCase):
